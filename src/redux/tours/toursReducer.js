@@ -53,8 +53,6 @@ const removeTourAPI = (tourId) => async (dispatch) => {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      console.log(data.success);
       if (data.response === 'Tour item deleted successfully') dispatch({ type: 'REMOVE_TOUR_FROM_API', payload: tourId });
     });
 };
