@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 const TourItemDetails = () => {
   const { state } = useLocation();
 
-  const setCurrencyFormat = (number) => (
-    number.toLocaleString('en-US', { style: 'currency', currency: 'USA' })
+  const setCurrencyFormat = (numStr) => (
+    parseFloat(numStr).toLocaleString('en-US', { style: 'currency', currency: 'USA' }).replace('USA', 'USD')
   );
 
   return (
