@@ -12,6 +12,13 @@ body {
   color: $base;
 
   @include font;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -25,6 +32,7 @@ ul {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  overflow-y: auto;
 
   > * {
     width: 100%;
@@ -50,11 +58,25 @@ ul {
     margin-top: 4rem;
     height: calc(100vh - 4rem);
     padding: 1rem;
-    overflow-y: scroll;
   }
 
   @include mq($mw: 43.75rem) {
     flex-direction: row;
+    scrollbar-width: thin;
+    scrollbar-color: rgba($gray-dark, 0.25) $gray-light;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba($gray-dark, 0.25);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $gray-light;
+    }
 
     .section__side {
       width: 200px;
@@ -69,4 +91,12 @@ ul {
       width: calc(100% - 200px);
     }
   }
+}
+
+.link__btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid $accent;
+  background-color: $accent;
+  color: $white;
 }

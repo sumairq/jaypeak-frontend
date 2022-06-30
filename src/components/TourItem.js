@@ -20,7 +20,7 @@ const TourItem = ({ tourItem }) => (
           </li>
         </ul>
       </div>
-      <Link to={`/details/${tourItem.name.replace(/ /, '-')}`} state={tourItem} className="card__link" />
+      <Link to={`/tours/${tourItem.name.replace(/ /, '-')}`} state={tourItem} className="card__link" />
     </div>
   </li>
 );
