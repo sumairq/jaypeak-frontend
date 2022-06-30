@@ -48,9 +48,15 @@
     align-items: center;
 
     .tour__details-image {
+      width: 70%;
+
       img {
         max-width: 400px;
       }
+    }
+
+    .tour__details-features {
+      width: 30%;
     }
   }
 }
