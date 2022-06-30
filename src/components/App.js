@@ -6,7 +6,7 @@ import TourItemDetails from './TourItemDetails';
 
 const App = () => (
   <BrowserRouter>
-  <Navbar/>
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/tours/:name" element={<TourItemDetails />} />
