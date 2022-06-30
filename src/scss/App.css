@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gill-sans");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: #777;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: auto;
+}
+
+#root > * {
+  width: 100%;
+}
+
+#root .section__side {
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 5px rgba(122, 122, 122, 0.25);
+          box-shadow: 0 1px 5px rgba(122, 122, 122, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+}
+
+#root .section__main {
+  margin-top: 4rem;
+  height: calc(100vh - 4rem);
+  padding: 1rem;
+}
+
+@media (min-width: 43.75rem) {
+  #root {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(122, 122, 122, 0.25) #e7e5e5;
+  }
+  #root::-webkit-scrollbar-thumb {
+    background-color: rgba(122, 122, 122, 0.25);
+    border-radius: 10px;
+  }
+  #root::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  #root::-webkit-scrollbar-track {
+    background: #e7e5e5;
+  }
+  #root .section__side {
+    width: 200px;
+    height: 100vh;
+    -webkit-box-shadow: 1px 0 5px rgba(122, 122, 122, 0.25);
+            box-shadow: 1px 0 5px rgba(122, 122, 122, 0.25);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+  }
+  #root .section__main {
+    width: calc(100% - 200px);
+  }
+}
+
+.link__btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #55c57a;
+  background-color: #55c57a;
+  color: #fff;
+}
+
+.section__main > * {
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.tours__list.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tours__list.row .list__item.column {
+  margin: 1rem 0.5rem;
+}
+
+.tours__list.row .list__item.column .card {
+  width: 100%;
+  min-width: 300px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px rgba(122, 122, 122, 0.5);
+          box-shadow: 0 0 10px rgba(122, 122, 122, 0.5);
+  position: relative;
+}
+
+.tours__list.row .list__item.column .card > * {
+  width: 100%;
+}
+
+.tours__list.row .list__item.column .card__picture {
+  overflow: hidden;
+}
+
+.tours__list.row .list__item.column .card__picture img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  max-height: 200px;
+}
+
+.tours__list.row .list__item.column .card__heading {
+  width: 75%;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  top: 10rem;
+  right: 1rem;
+  z-index: 8;
+}
+
+.tours__list.row .list__item.column .card__heading span {
+  background-color: rgba(85, 197, 122, 0.75);
+  padding: 0 0.5rem;
+}
+
+.tours__list.row .list__item.column .card__details ul {
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0.5rem;
+}
+
+.tours__list.row .list__item.column .card__details ul li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e7e5e5;
+}
+
+.tours__list.row .list__item.column .card__details ul li:last-of-type {
+  border-bottom: none;
+}
+
+.tours__list.row .list__item.column .card__link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+@media (min-width: 43.75rem) {
+  .tours__list.row {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.tour__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tour__details .tour__details-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.tour__details .tour__details-features > * {
+  margin: 2rem auto 0;
+}
+
+.tour__details .tour__details-features > *:first-child {
+  margin-top: 0;
+}
+
+.tour__details .tour__details-features .details__title {
+  font-size: 1.5rem;
+}
+
+.tour__details .tour__details-features .details__list {
+  width: 100%;
+  max-width: 300px;
+}
+
+.tour__details .tour__details-features .details__list li {
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tour__details .tour__details-features .details__list li:nth-child(odd) {
+  background-color: #e7e5e5;
+}
+
+.tour__details .tour__details-features .details__list span {
+  font-weight: 400;
+}
+
+@media (min-width: 43.75rem) {
+  .tour__details {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tour__details .tour__details-image img {
+    max-width: 400px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
