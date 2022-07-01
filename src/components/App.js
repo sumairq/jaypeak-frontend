@@ -15,6 +15,8 @@ const App = () => (
       <Route path="/tours/:name" element={<TourItemDetails />} />
       <Route path="/delete" element={<ToursDeleteList />} />
       <Route path="/reservations" element={<MyBookings />} />
+      <Route path="/delete" element={<ToursDeleteList />} />
+      <Route path="/reservations" element={<MyBookings />} />
       <Route path="*" element={<Home />} />
     </Routes>
   </BrowserRouter>
