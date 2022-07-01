@@ -1,4 +1,4 @@
-# PeakVermontTours Frontend
+# JayPeakTours Frontend
 It is minimum viable product to simulate a booking tours website. The users can get a list of available tours and check their details. It also allows user to create and delete tour items.
 
 ## Features
