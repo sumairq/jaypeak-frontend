@@ -5,6 +5,7 @@ import {
 import { useForm } from 'react-hook-form';
 import createTourResolver from '../validations/createTourResolver';
 
+/* eslint-disable react/jsx-props-no-spreading */
 const TourReserveModal = ({ handleClose }) => {
   const {
     register, handleSubmit, formState: { errors }, reset,
