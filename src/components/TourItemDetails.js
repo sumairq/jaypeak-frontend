@@ -51,7 +51,7 @@ const TourItemDetails = () => {
           </li>
         </ul>
         <div className="details__options" style={BUTTON_WRAPPER_STYLES}>
-          <Button onClick={() => setIsOpen(true)}><Link to="/reserve" state={state} className="link__btn btn__reserve">RESERVE</Link></Button>
+          <button type="button" onClick={() => setIsOpen(true)}><Link to="/reserve" state={state} className="link__btn btn__reserve">RESERVE</Link></button>
 
           <Modal open={isOpen} onClose={() => setIsOpen(false)}>
             Inside Madal

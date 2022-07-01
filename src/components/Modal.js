@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 const MODAL_STYLES = {
   position: 'fixed',
@@ -26,9 +27,15 @@ export default function Modal({ open, children, onClose }) {
     <>
       <div style={OVERLAY_STYLES} />
       <div style={MODAL_STYLES}>
-        <button onClick={onClose}>Close Modal</button>
+        <button type="button" onClick={onClose}>Close Modal</button>
         {children}
       </div>
     </>
   );
 }
+
+Modal.propTypes = {
+  onClose: PropTypes.func.isRequired,
+  open: PropTypes.func.isRequired,
+  children: PropTypes.func.isRequired,
+};
