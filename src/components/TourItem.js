@@ -2,21 +2,21 @@ import { PropTypes } from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const TourItem = ({ tourItem }) => (
-  <li className="list__item column">
+  <li className="list__item columnn">
     <div className="card">
       <div className="card__picture">
         <img src={tourItem.image_url} alt={'tour image '.concat(tourItem.id)} />
+        <h2 className="card__heading">
+          <span className="card__heading-span">{tourItem.name}</span>
+        </h2>
       </div>
-      <h2 className="card__heading">
-        <span className="card__heading-span">{tourItem.name}</span>
-      </h2>
       <div className="card__details">
         <ul>
           <li>
-            {`${tourItem.duration} days tour`}
+            {`${tourItem.duration} day tours`}
           </li>
           <li>
-            {'Difficulty: '.concat(tourItem.difficulty)}
+            {`${tourItem.difficulty} difficulty`}
           </li>
         </ul>
       </div>
