@@ -1,0 +1,21 @@
+.list_item-delete {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    max-width: 100%;
+    .item__title {
+        width: 80%;
+        margin: 3rem;
+    }
+    .item__option {
+        width: 35%;
+    }
+    &:nth-child(odd) {
+      background-color: $gray-light;
+    }
+
+    @include mq($mw: 43.75rem) {
+        max-width: 60%;
+      }
+  }
+  
