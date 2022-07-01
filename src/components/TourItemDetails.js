@@ -18,7 +18,7 @@ const TourItemDetails = () => {
         <ul className="details__list">
           <li>
             <span>Duration:</span>
-            <span>{`${state.duration} days tour`}</span>
+            <span>{`${state.duration} day tours`}</span>
           </li>
           <li>
             <span>Up to:</span>

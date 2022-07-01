@@ -18,26 +18,24 @@ const getToursAPI = () => async (dispatch) => {
 };
 
 const addTourAPI = (tourInfo) => async (dispatch) => {
+  console.log(tourInfo);
   await fetch(`${baseURL}/tours`, {
     method: 'POST',
-    body: JSON.stringify({
-      name: tourInfo.name,
-      description: tourInfo.description,
-      duration: tourInfo.duration,
-      capacity: tourInfo.capacity,
-      guides: tourInfo.guides,
-      image_url: tourInfo.image_url,
-    }),
+    body: JSON.stringify(tourInfo),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
   })
     .then((response) => response.json())
     .then((data) => {
-      dispatch({
-        type: 'ADD_TOUR_TO_API',
-        payload: data,
-      });
+      if (!data.response) {
+        dispatch(
+          {
+            type: 'ADD_TOUR_TO_API',
+            payload: data,
+          },
+        );
+      }
     });
 };
 
