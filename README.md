@@ -19,6 +19,17 @@ It is minimum viable product to simulate a booking tours website. The users can 
 - SCSS
 - Bootstrap
 
+### Kanban boards
+- [Kanban Board Link](https://github.com/mukhammadrizooff/JayPeakTours-backend/projects/1).
+
+#### After completion
+
+![image](https://user-images.githubusercontent.com/63915024/176949686-b8caf35e-92a9-4b11-8635-94c06ada04e4.png)
+
+## Team members
+- 1.Gabriella
+- 2.Sumair
+- 3.Muhammad Rizo
 
 ## Getting Started
 
