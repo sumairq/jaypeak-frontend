@@ -1,6 +1,6 @@
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
-import {Navigate} from 'react-router-dom'
+import { Navigate } from 'react-router-dom';
 import {
   Modal, Button, Form, Alert,
 } from 'react-bootstrap';
@@ -18,7 +18,7 @@ const TourAddModal = ({ handleClose }) => {
     dispatch(addTourAPI(formData));
     reset();
     handleClose();
-    <Navigate to="/"/> 
+      <Navigate to="/" />;
   };
 
   return (
