@@ -12,7 +12,7 @@ const ToursList = () => {
   }, []);
 
   return (
-    <ul className="tours__list row">
+    <ul className="tours__list roww">
       {
         toursList.length > 0 && toursList.map((tour) => <TourItem key={tour.id} tourItem={tour} />)
       }

@@ -10,8 +10,8 @@ const BUTTON_WRAPPER_STYLES = {
 const TourItemDetails = () => {
   const { state } = useLocation();
 
-  const setCurrencyFormat = (number) => (
-    number.toLocaleString('en-US', { style: 'currency', currency: 'USA' })
+  const setCurrencyFormat = (numStr) => (
+    parseFloat(numStr).toLocaleString('en-US', { style: 'currency', currency: 'USA' }).replace('USA', 'USD')
   );
 
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,7 @@ const TourItemDetails = () => {
         <ul className="details__list">
           <li>
             <span>Duration:</span>
-            <span>{`${state.duration} days tour`}</span>
+            <span>{`${state.duration} day tours`}</span>
           </li>
           <li>
             <span>Up to:</span>

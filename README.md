@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# PeakVermontTours Frontend
+It is minimum viable product to simulate a booking tours website. The users can get a list of available tours and check their details. It also allows user to create and delete tour items.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Available Scripts
+- Users can login using its email which was used during the signup process.
+- New users can create new account to use the app.
+- The main page display the list of tours available which are fetch from the rails API.
+- Check the details of any cad by clicking on them.
+- My bookings navigator option display all bookings that belong to a given user.
+- User can create new Tour Cards by clicking on the navigator option. It will display a modal form which requires the requested data.
+- Users can also delete Tour card by clickin on the navigation "Delete item" option.
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+- React
+- Redux
+- JavaScript
+- SCSS
+- Bootstrap
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Have `git` installed on your local computer.
+- have `node` installed on your local computer.
+- Install and execute the `JayPeakTours-backend` rails API from [this](https://github.com/mukhammadrizooff/JayPeakTours-backend) repository.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Run the commant `git@github.com:mukhammadrizooff/JayPeakTours-frontend.git` or `https://github.com/mukhammadrizooff/JayPeakTours-frontend.git` to clone this repository to your local computer. Choose the location you prefer.
+- Run the command `npm install` to install all project's react dependencies.
 
-### `npm run eject`
+### Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Run the command `npm start` to execute the app.
+- Open the url `http://localhost:3000` on a browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Authors
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+👤 *Gabriela Sánchez Espirilla*
 
-## Learn More
+- GitHub: [@gabyse1](https://github.com/gabyse1)
+- LinkedIn: [gabyse](https://www.linkedin.com/in/gabyse/)
+- Twitter: [@gabyse0](https://twitter.com/gabyse0)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 *Sumair Qaisar*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@sumairq](https://github.com/sumairq)
+- Twitter: [@sumair_qaisar](https://twitter.com/sumair_qaisar)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sumair-qaisar-jadoon-84a877164/)
 
-### Code Splitting
+👤 *Mukhammadrizo Abdunazarov*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [@mukhammadrizooff](https://github.com/mukhammadrizooff)
+- Twitter: [@muhammadrizooff](https://twitter.com/muhammadrizooff)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/mukhammadrizooff)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contributing
 
-### Making a Progressive Web App
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to check the [issues page](../../issues/).
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Show your support
 
-### Deployment
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Linters: [Microverse](https://github.com/microverseinc/linters-config)
+- Design Idea: [Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign/modules/173005577)
+- Designer: [Murat Korkmaz](https://www.behance.net/muratk)
+
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.

@@ -6,19 +6,20 @@
   }
 }
 
-.tours__list.row {
+.tours__list.roww {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 
-  .list__item.column {
-    margin: 1rem 0.5rem;
+  .list__item.columnn {
+    margin: 1.5rem 0.5rem;
 
     .card {
       width: 100%;
       min-width: 300px;
       text-align: center;
       box-shadow: 0 0 10px rgba($gray-dark, 0.5);
+      border-radius: 0;
       position: relative;
 
       > * {
@@ -28,6 +29,7 @@
 
     .card__picture {
       overflow: hidden;
+      position: relative;
 
       img {
         width: 100%;
@@ -39,13 +41,13 @@
 
     .card__heading {
       width: 75%;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 300;
       text-transform: uppercase;
       text-align: right;
       color: $white;
       position: absolute;
-      top: 10rem;
+      bottom: 0;
       right: 1rem;
       z-index: 8;
 
@@ -67,6 +69,11 @@
 
           &:last-of-type {
             border-bottom: none;
+          }
+
+          .text__details {
+            margin-right: 0.5rem;
+            font-weight: 500;
           }
         }
       }

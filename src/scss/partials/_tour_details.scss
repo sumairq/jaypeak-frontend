@@ -21,6 +21,8 @@
 
     .details__title {
       font-size: 1.5rem;
+      text-transform: uppercase;
+      color: $accent;
     }
 
     .details__list {
@@ -48,9 +50,15 @@
     align-items: center;
 
     .tour__details-image {
+      width: 70%;
+
       img {
         max-width: 400px;
       }
+    }
+
+    .tour__details-features {
+      width: 30%;
     }
   }
 }
