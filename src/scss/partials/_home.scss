@@ -68,6 +68,11 @@
           &:last-of-type {
             border-bottom: none;
           }
+
+          .text__details {
+            margin-right: 0.5rem;
+            font-weight: 500;
+          }
         }
       }
     }

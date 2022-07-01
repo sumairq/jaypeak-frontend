@@ -4,6 +4,8 @@ import Navbar from './Navbar';
 import Home from './Home';
 import TourItemDetails from './TourItemDetails';
 import ToursDeleteList from './ToursDeleteList';
+import MyBookings from './MyBookings';
+
 
 const App = () => (
   <BrowserRouter>
@@ -11,7 +13,11 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/tours/:name" element={<TourItemDetails />} />
+
       <Route path="/delete" element={<ToursDeleteList />} />
+
+      <Route path="/reservations" element={<MyBookings />} />
+
       <Route path="*" element={<Home />} />
     </Routes>
   </BrowserRouter>
