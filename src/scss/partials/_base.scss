@@ -23,6 +23,7 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 #root {
@@ -71,7 +72,7 @@ ul {
     }
 
     &::-webkit-scrollbar {
-      width: 0.5rem;
+      width: 0.25rem;
     }
 
     &::-webkit-scrollbar-track {
@@ -89,6 +90,8 @@ ul {
 
     .section__main {
       width: calc(100% - 200px);
+      margin-top: 1rem;
+      height: calc(100vh - 1rem);
     }
   }
 }
@@ -99,4 +102,22 @@ ul {
   border: 1px solid $accent;
   background-color: $accent;
   color: $white;
+  font-weight: 400;
+  transition: color, background-color 250ms ease-in-out;
+
+  &:hover {
+    color: $accent;
+    background-color: transparent;
+  }
+}
+
+.btn__link {
+  border: 0;
+  outline: 0;
+  background: transparent;
+
+  &:focus,
+  &:visited {
+    color: $base;
+  }
 }

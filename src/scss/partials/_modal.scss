@@ -1,0 +1,35 @@
+.modal-content {
+  max-height: 90vh;
+}
+
+.modal-body {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba($gray-dark, 0.25) $gray-light;
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba($gray-dark, 0.25);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $gray-light;
+  }
+
+  > * > * {
+    margin-bottom: 1rem;
+  }
+
+  .form-label {
+    font-weight: 400;
+    color: rgba($base, 0.75);
+  }
+
+  .alert {
+    padding: 0.5rem;
+  }
+}

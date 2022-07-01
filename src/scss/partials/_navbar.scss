@@ -97,7 +97,7 @@
   }
 
   @include mq($mw: 43.75rem) {
-    color: rgba($gray-dark, 0.5);
+    color: $base;
 
     &:hover,
     &.active {
