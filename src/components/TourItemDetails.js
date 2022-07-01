@@ -1,4 +1,11 @@
 import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import Modal from './Modal';
+
+const BUTTON_WRAPPER_STYLES = {
+  position: 'relative',
+  zIndex: 1,
+};
 
 const TourItemDetails = () => {
   const { state } = useLocation();
@@ -6,6 +13,8 @@ const TourItemDetails = () => {
   const setCurrencyFormat = (number) => (
     number.toLocaleString('en-US', { style: 'currency', currency: 'USA' })
   );
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="section__main tour__details">
@@ -41,8 +50,13 @@ const TourItemDetails = () => {
             <span>{setCurrencyFormat(state.price)}</span>
           </li>
         </ul>
-        <div className="details__options">
-          <Link to="/reserve" state={state} className="link__btn btn__reserve">RESERVE</Link>
+        <div className="details__options" style={BUTTON_WRAPPER_STYLES}>
+          <Button onClick={() => setIsOpen(true)}><Link to="/reserve" state={state} className="link__btn btn__reserve">RESERVE</Link></Button>
+
+          <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+            Inside Madal
+          </Modal>
+
         </div>
       </div>
     </div>
