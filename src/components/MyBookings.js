@@ -14,7 +14,7 @@ const MyBookings = () => {
 
   return (
     <div className="section__main">
-      <ul className="tours__list row">
+      <ul className="tours__list roww">
         {
           myBookingsList.length > 0 && myBookingsList.map(
             (booking) => <MyBookingItem key={uuidv4()} bookingItem={booking} />,

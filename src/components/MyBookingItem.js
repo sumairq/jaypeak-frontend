@@ -11,14 +11,14 @@ const MyBookingItem = ({ bookingItem }) => {
   );
 
   return (
-    <li className="list__item column">
+    <li className="list__item columnn">
       <div className="card">
         <div className="card__picture">
           <img src={bookingItem.tour.image_url} alt={'tour image '.concat(bookingItem.tour.id)} />
+          <h2 className="card__heading">
+            <span className="card__heading-span">{bookingItem.tour.name}</span>
+          </h2>
         </div>
-        <h2 className="card__heading">
-          <span className="card__heading-span">{bookingItem.tour.name}</span>
-        </h2>
         <div className="card__details">
           <ul>
             <li>
