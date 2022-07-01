@@ -48,8 +48,7 @@ const Navbar = () => {
         </button>
         <ul className={'navbar__menu-list '.concat(modalMenuList)}>
           <li className="navbar__menu-item"><NavLink to="/" className="nav-link" onClick={closeModalWindow}>TOURS</NavLink></li>
-          <li className="navbar__menu-item"><NavLink to="/reservations" className="nav-link" onClick={closeModalWindow}>MY RESERVATIONS</NavLink></li>
-          <li className="navbar__menu-item"><button type="button" className="nav-link btn__link" onClick={() => handleShowModal('reserve-tour')}>RESERVE</button></li>
+          <li className="navbar__menu-item"><NavLink to="/reservations" className="nav-link" onClick={closeModalWindow}>MY BOOKINGS</NavLink></li>
           <li className="navbar__menu-item"><button type="button" className="nav-link btn__link" onClick={() => handleShowModal('add-tour')}>ADD ITEM</button></li>
           <li className="navbar__menu-item"><NavLink to="/delete" className="nav-link" onClick={closeModalWindow}>DELETE ITEM</NavLink></li>
         </ul>
