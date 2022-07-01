@@ -8,6 +8,7 @@ import { useForm } from 'react-hook-form';
 import createTourResolver from '../validations/createTourResolver';
 import { addTourAPI } from '../redux/tours/toursReducer';
 
+/* eslint-disable react/jsx-props-no-spreading */
 const TourAddModal = ({ handleClose }) => {
   const dispatch = useDispatch();
   const {
