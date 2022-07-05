@@ -24,7 +24,13 @@ It is minimum viable product to simulate a booking tours website. The users can 
 
 #### After completion
 
-![image](https://user-images.githubusercontent.com/63915024/176949686-b8caf35e-92a9-4b11-8635-94c06ada04e4.png)
+Initial state | After completion
+------------- | -------------
+![2022-07-05_14-34-19](https://user-images.githubusercontent.com/63915024/177299570-859ccf4f-c1bd-436f-9b83-c5422e6bdcef.png) | ![image](https://user-images.githubusercontent.com/63915024/176949686-b8caf35e-92a9-4b11-8635-94c06ada04e4.png)
+
+
+
+
 
 ## Team members
 - 1.Gabriella
