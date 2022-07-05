@@ -15,7 +15,7 @@ const TourDeleteItem = ({ tourItem }) => {
         <p>{tourItem.name}</p>
       </div>
       <div className="item__option">
-        <button type="button" className="btn__link" data-id={tourItem.id} onClick={removeTourFromStore}>REMOVE</button>
+        <button type="button" className="btn__btn" data-id={tourItem.id} onClick={removeTourFromStore}>REMOVE</button>
       </div>
     </li>
   );

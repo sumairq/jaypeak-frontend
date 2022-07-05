@@ -93,3 +93,65 @@
     justify-content: space-around;
   }
 }
+
+.slider__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(300px + 1rem);
+  height: auto;
+  overflow-x: hidden;
+
+  .tours__list {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    
+    .list__item.columnn {
+      margin: 0 0.5rem;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  @include mq($mw: 52rem) {
+    width: calc(600px + 2rem);
+  }
+
+  @include mq($mw: 72rem) {
+    width: calc(900px + 3rem);
+  }
+}
+
+.slider__arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  > * {
+    width: 3rem;
+    height: 2.5rem;
+    background-color: rgba($accent, 0.85);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms ease-in-out;
+  }
+
+  > *:hover {
+    background-color: rgba($accent, 1);
+  }
+  
+  .arrow__left {
+    border-radius: 0 20px 20px 0;
+    padding-left: 0.5rem;
+  }
+
+  .arrow__right {
+    border-radius: 20px 0 0 20px;
+    padding-right: 0.5rem;
+  }
+}
