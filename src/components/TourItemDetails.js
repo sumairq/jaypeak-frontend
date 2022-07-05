@@ -17,7 +17,7 @@ const TourItemDetails = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="section__main tour__details">
+    <div className="section__main tour__details section__horizontal">
       <div className="tour__details-image">
         <img src={state.image_url} alt={'Tour photo '.concat(state.id)} />
       </div>

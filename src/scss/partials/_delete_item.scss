@@ -1,16 +1,30 @@
+.tours__list {
+  margin-top: 1rem;
+}
+
 .list_item-delete {
+  max-width: 100%;
+  padding: 1rem;
+  margin:  0 auto;
   display: flex;
   align-items: center;
-  margin-right: 2rem;
-  max-width: 100%;
 
   .item__title {
     width: 80%;
-    margin: 3rem;
+    margin-right: 3rem;
+
+    p {
+      margin-bottom: 0;
+    }
   }
 
   .item__option {
     width: 35%;
+
+    .btn__btn {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+    }
   }
 
   &:nth-child(odd) {

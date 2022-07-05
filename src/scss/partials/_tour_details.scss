@@ -1,7 +1,4 @@
 .tour__details {
-  display: flex;
-  flex-direction: column;
-
   .tour__details-image {
     img {
       width: 100%;
@@ -45,12 +42,9 @@
     }
   }
 
-  @include mq($mw: 43.75rem) {
-    flex-direction: row;
-    align-items: center;
-
+  @include mq($mw: 48.75rem) {
     .tour__details-image {
-      width: 70%;
+      width: 60%;
 
       img {
         max-width: 400px;
@@ -58,7 +52,8 @@
     }
 
     .tour__details-features {
-      width: 30%;
+      width: 40%;
+      margin-left: 1rem;
     }
   }
 }
