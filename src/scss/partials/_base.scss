@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: $base;
+
+  @include font;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+
+  > * {
+    width: 100%;
+  }
+
+  .section__side {
+    height: 4rem;
+    padding: 0.5rem 1rem;
+    background-color: $white;
+    box-shadow: 0 1px 5px rgba($gray-dark, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+  }
+
+  .section__main {
+    margin-top: 4rem;
+    height: calc(100vh - 4rem);
+    padding: 1rem;
+  }
+
+  @include mq($mw: 43.75rem) {
+    flex-direction: row;
+    scrollbar-width: thin;
+    scrollbar-color: rgba($gray-dark, 0.25) $gray-light;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba($gray-dark, 0.25);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0.25rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $gray-light;
+    }
+
+    .section__side {
+      width: 200px;
+      height: 100vh;
+      box-shadow: 1px 0 5px rgba($gray-dark, 0.25);
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    .section__main {
+      width: calc(100% - 200px);
+      margin-top: 1rem;
+      height: calc(100vh - 1rem);
+    }
+  }
+}
+
+.link__btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid $accent;
+  background-color: $accent;
+  color: $white;
+  font-weight: 400;
+  transition: color, background-color 250ms ease-in-out;
+
+  &:hover {
+    color: $accent;
+    background-color: transparent;
+  }
+}
+
+.btn__link {
+  border: 0;
+  outline: 0;
+  background: transparent;
+
+  &:focus,
+  &:visited {
+    color: $base;
+  }
+}
