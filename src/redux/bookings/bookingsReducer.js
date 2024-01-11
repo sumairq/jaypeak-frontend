@@ -1,4 +1,6 @@
-const baseURL = 'http://localhost:3001/api/v1';
+import config from '../../Constants';
+
+const baseURL = config.url.API_URL;
 
 const GET_BOOKINGS_FROM_API = 'GET_BOOKINGS_FROM_API';
 const ADD_BOOKING_TO_API = 'ADD_BOOKING_TO_API';

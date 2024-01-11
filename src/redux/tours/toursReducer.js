@@ -1,4 +1,6 @@
-const baseURL = 'http://localhost:3001/api/v1';
+import config from '../../Constants';
+
+const baseURL = config.url.API_URL;
 
 const GET_TOURS_FROM_API = 'GET_TOURS_FROM_API';
 const ADD_TOUR_TO_API = 'ADD_TOUR_TO_API';
@@ -18,7 +20,6 @@ const getToursAPI = () => async (dispatch) => {
 };
 
 const addTourAPI = (tourInfo) => async (dispatch) => {
-  console.log(tourInfo);
   await fetch(`${baseURL}/tours`, {
     method: 'POST',
     body: JSON.stringify(tourInfo),
