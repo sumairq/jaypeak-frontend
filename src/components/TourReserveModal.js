@@ -11,7 +11,7 @@ const TourReserveModal = ({ handleClose }) => {
     register, handleSubmit, formState: { errors }, reset,
   } = useForm({ resolver: createTourResolver });
 
-  const onSubmit = (formData) => {
+  const onSubmit = () => {
     reset();
     handleClose();
   };
